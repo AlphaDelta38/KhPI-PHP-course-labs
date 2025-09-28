@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+
+		<div class="contentContainer">
+			
+			<div class="cartContainer" id="cartContainer" style="display: none;">
+				<h1>My cart</h1>
+				<div class="cartItems" id="cartItems">
+				</div>
+			</div>
+			
+			<div class="catalogContainer" id="catalogContainer">
+				<h1>Catalog</h1>
+				<div class="catalogItems">
+					<div class="catalogItem">
+						<h2>Item 1</h2>
+						<p>Price: 100</p>
+						<button onclick="addItem('Item 1', 1, 100)">Add</button>
+					</div>
+					<div class="catalogItem">
+						<h2>Item 2</h2>
+						<p>Price: 300</p>
+						<button onclick="addItem('Item 2', 2, 300)">Add</button>
+					</div>
+					<div class="catalogItem">
+						<h2>Item 3</h2>
+						<p>Price: 600</p>
+						<button onclick="addItem('Item 3', 3, 600)">Add</button>
+					</div>
+					<div class="catalogItem">
+						<h2>Item 4</h2>
+						<p>Price: 800</p>
+						<button onclick="addItem('Item 4', 4, 800)">Add</button>
+					</div>
+				</div>
+			</div>
+
+			<button id="viewCartBtn">View my cart</button>
+		</div>
+
+	</div>
+	<script src="./index.js"></script>
+</body>
+</html>

@@ -12,6 +12,7 @@ const menuItem = [
     backwardText: "Back to Upload Form",
   }},
 ]
+
 function changeVisibility(id, display) {
   const element = document.getElementById(id); 
 
