@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+	<div class="container">
+    <form id="createAccountForm">
+      <input type="text" name="currency" placeholder="currency">
+      <select name="type" id="type">
+        <option value="Account">Account</option>
+        <option value="SavingAccount">Saving Account</option>
+      </select>
+      <input type="text" name="interestRate" placeholder="interestRate">
+      <button type="submit">Submit</button>
+    </form>
+    <div class="bankAccountsContainer" id="bankAccountsContainer">
+
+    </div>
+    <div class="popupContainer" id="depositPopup">
+      <form id="depositForm">
+        <h2>Deposit</h2>
+        <p>Account id:</p>
+        <input type="number" name="id" placeholder="id" readonly>
+        <p>Amount:</p>
+        <input type="number" name="amount" placeholder="amount">
+        <button type="submit">Deposit</button>
+        <button id="closeDepositForm">Close</button>
+      </form>
+    </div>
+    <div class="popupContainer" id="withdrawPopup">
+      <form id="withdrawForm">
+        <h2>Withdraw</h2>
+        <p>Account id:</p>
+        <input type="number" name="id" placeholder="id" readonly>
+        <p>Amount:</p>
+        <input type="number" name="amount" placeholder="amount">
+        <button type="submit">Withdraw</button>
+        <button id="closeWithdrawForm">Close</button>
+      </form>
+    </div>
+	</div>
+	<script src="./index.js"></script>
+</body>
+</html>
