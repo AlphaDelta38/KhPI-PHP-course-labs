@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+
+		<div class="contentContainer">
+
+			<div id="userInfoContainer" style="display: none; display: none; flex-direction: column; gap: 20px; justify-content: center; align-items: center;">
+				<h1 id="userName">Hello, </h1>
+				<button id="logoutBtn">Logout</button>
+			</div>
+
+
+			<form  method="post" enctype="multipart/form-data" id="RegisterForm">
+				<label>Registration</label>
+				<input type="text" name="name" placeholder="Your name" id="nameInput">
+				<input type="text" name="email" placeholder="Your email" id="emailInput">
+				<input type="password" name="password" placeholder="Your password" id="passwordInput">
+				<button class="directTo" id="directToLogin">Log in</button>
+				<button class="submitButton" type="submit" value="Submit">Register</button>
+			</form>
+
+			<form  method="post" enctype="multipart/form-data" id="LoginForm">
+				<label>Login</label>
+				<input type="text" name="email" placeholder="Your email" id="loginInput">
+				<input type="password" name="password" placeholder="Your password" id="passwordInput">
+				<button class="directTo" id="directToRegister">Sing in</button>
+				<button class="submitButton" type="submit" value="Submit">Login</button>
+			</form>
+			<div class="errorMessageContainer" id="errorMessageContainer">
+				<p id="errorMessage"></p>
+			</div>
+		</div>
+	</div>
+	<script src="./index.js"></script>
+</body>
+</html>
